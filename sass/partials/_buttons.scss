@@ -1,0 +1,107 @@
+// =============================================================================
+// Boutons — Site de Mariage
+// =============================================================================
+
+// Base commune
+%btn-base {
+  display: inline-block;
+  font-family: $sans-serif;
+  font-size: 13px;
+  font-weight: $semibold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 2px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 250ms ease;
+  white-space: nowrap;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+// Bouton principal — accent
+.btn-accent {
+  @extend %btn-base;
+  background-color: $accent-color;
+  color: $txt-light;
+  border-color: $accent-color;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color-hover;
+    border-color: $accent-color-hover;
+    color: $txt-light;
+  }
+
+  &:active {
+    background-color: darken($accent-color, 15%);
+  }
+}
+
+// Bouton blanc (sur fond foncé / hero)
+.btn-white {
+  @extend %btn-base;
+  background-color: transparent;
+  color: $txt-light;
+  border-color: $txt-light;
+
+  &:hover,
+  &:focus {
+    background-color: $txt-light;
+    color: $accent-color;
+  }
+}
+
+// Bouton contour (outline)
+.btn-outline {
+  @extend %btn-base;
+  background-color: transparent;
+  color: $accent-color;
+  border-color: $accent-color;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $txt-light;
+  }
+}
+
+// Tailles
+.btn-large {
+  padding: 16px 40px;
+  font-size: 14px;
+}
+
+.btn-small {
+  padding: 8px 18px;
+  font-size: 11px;
+}
+
+// Bouton rempli (RSVP form submit)
+.btn-fill {
+  @extend %btn-base;
+  display: block;
+  width: 100%;
+  background-color: $accent-color;
+  color: $txt-light;
+  border: none;
+  padding: 16px;
+  font-size: 14px;
+  letter-spacing: 3px;
+  border-radius: 3px;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color-hover;
+    color: $txt-light;
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}

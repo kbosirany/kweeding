@@ -1,0 +1,30 @@
+# Dépendances Node
+node_modules/
+
+# Fichiers macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+npm-debug.log*
+yarn-error.log
+
+# Builds intermédiaires
+*.map
+
+# Variables d'environnement
+.env
+.env.local
+
+# Fichiers temporaires
+tmp/
+temp/

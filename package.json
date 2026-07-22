@@ -1,0 +1,29 @@
+{
+  "name": "kweeding",
+  "version": "1.0.0",
+  "description": "Site web de mariage one-page — inspiré du template rampatra/wedding-website",
+  "main": "index.html",
+  "scripts": {
+    "build": "gulp",
+    "watch": "gulp watch",
+    "start": "npx http-server . -p 3000 -o"
+  },
+  "keywords": [
+    "wedding",
+    "mariage",
+    "website",
+    "template",
+    "one-page"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "sass": "^1.77.0"
+  },
+  "dependencies": {}
+}
