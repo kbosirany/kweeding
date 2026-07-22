@@ -1,0 +1,36 @@
+// =============================================================================
+// Palette de couleurs — Site de Mariage
+// =============================================================================
+
+// Couleur principale (or rosé / champagne)
+$accent-color:        #c9a96e;
+$accent-color-hover:  #a87c44;
+$accent-color-light:  #f5ead8;
+
+// Textes
+$txt-primary:   #3d3d3d;
+$txt-secondary: #777777;
+$txt-light:     #ffffff;
+$txt-accent:    $accent-color;
+
+// Fonds
+$bg-light:    #fafaf8;
+$bg-section:  #f7f3ee;
+$bg-dark:     #2c2c2c;
+$white-color: #ffffff;
+
+// Bordures
+$keyline-color:   #e8e0d5;
+$border-light:    #f0ebe3;
+
+// Formulaire
+$form-placeholder: #aaaaaa;
+$form-border:      $keyline-color;
+$form-focus:       $accent-color;
+
+// Timeline
+$timeline-line:   $keyline-color;
+$timeline-dot:    $accent-color;
+
+// Overlay
+$overlay-color: rgba(0, 0, 0, 0.45);

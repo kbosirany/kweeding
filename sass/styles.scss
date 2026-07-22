@@ -1,0 +1,55 @@
+// =============================================================================
+// styles.scss — Point d'entrée SCSS principal
+// Site de Mariage
+// =============================================================================
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Open+Sans:300,400,600');
+
+// Partials
+@import 'partials/colors';
+@import 'partials/typography';
+@import 'partials/buttons';
+@import 'partials/layout';
+
+// =============================================================================
+// Styles globaux supplémentaires
+// =============================================================================
+
+.group::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.no-padding { padding: 0; }
+.no-margin  { margin: 0; }
+
+*:focus { outline: none !important; }
+
+// Override Bootstrap modal
+body.modal-open { padding-right: 0 !important; }
+.modal-body     { padding: 25px; }
+
+// Accessibilité : focus visible pour la navigation au clavier
+// On retire l'outline uniquement pour les interactions souris/tactile
+@media (pointer: fine) {
+  a:focus,
+  button:focus,
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba($accent-color, 0.35);
+  }
+}
+
+// Floating arrow animation
+@keyframes floating-arrow {
+  from   { transform: translate(-50%, 0); }
+  65%    { transform: translate(-50%, 12px); }
+  to     { transform: translate(-50%, 0); }
+}
+.floating-arrow {
+  animation: floating-arrow 2s ease-in-out infinite;
+}

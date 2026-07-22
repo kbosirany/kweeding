@@ -1,0 +1,108 @@
+{
+  "couple": {
+    "person1": {
+      "firstName": "Prénom",
+      "lastName": "Nom"
+    },
+    "person2": {
+      "firstName": "Prénom",
+      "lastName": "Nom"
+    },
+    "hashtag": "#PrenomEtPrenom2025"
+  },
+
+  "wedding": {
+    "date": "2025-06-14",
+    "dateFormatted": "14 Juin 2025",
+    "time": "15:00",
+    "language": "fr"
+  },
+
+  "ceremony": {
+    "name": "Cérémonie",
+    "location": "Nom du lieu",
+    "address": "Adresse complète, Code postal, Ville",
+    "mapsLink": "https://www.google.com/maps/dir/?api=1&destination=ADRESSE+ENCODEE",
+    "coordinates": {
+      "lat": 48.8566,
+      "lng": 2.3522
+    },
+    "time": "15h00",
+    "doorOpenTime": "14h30"
+  },
+
+  "reception": {
+    "name": "Réception",
+    "location": "Nom du domaine / salle",
+    "address": "Adresse complète, Code postal, Ville",
+    "time": "17h00"
+  },
+
+  "story": [
+    {
+      "date": "Mois AAAA",
+      "title": "Notre rencontre",
+      "text": "C'est ici que tout a commencé…",
+      "icon": "star"
+    },
+    {
+      "date": "Mois AAAA",
+      "title": "Notre premier voyage",
+      "text": "Décrivez un moment fort de votre relation.",
+      "icon": "heart"
+    },
+    {
+      "date": "Mois AAAA",
+      "title": "La demande",
+      "text": "Racontez comment la demande s'est passée.",
+      "icon": "diamond"
+    },
+    {
+      "date": "14 Juin 2025",
+      "title": "Le grand jour !",
+      "text": "Et maintenant, nous vous invitons à célébrer avec nous.",
+      "icon": "heart"
+    }
+  ],
+
+  "faq": [
+    {
+      "question": "Dress code",
+      "answer": "Tenue de soirée / cocktail recommandée. Teintes claires et élégantes. Évitez le blanc pour les dames.",
+      "icon": "tshirt"
+    },
+    {
+      "question": "Hébergement",
+      "answer": "Plusieurs hôtels sont disponibles à proximité. Contactez-nous pour les recommandations et tarifs négociés.",
+      "icon": "bed"
+    },
+    {
+      "question": "Transport",
+      "answer": "Un service de navette sera disponible depuis [Point de départ] à [Heure]. Des places de parking sont disponibles sur site.",
+      "icon": "car"
+    },
+    {
+      "question": "Cadeaux",
+      "answer": "Votre présence est déjà notre plus beau cadeau ! Si vous souhaitez nous gâter, une liste de mariage est disponible chez [magasin].",
+      "icon": "gift"
+    }
+  ],
+
+  "rsvp": {
+    "deadline": "2025-05-01",
+    "deadlineFormatted": "1er Mai 2025",
+    "googleScriptUrl": "https://script.google.com/macros/s/VOTRE_SCRIPT_ID/exec",
+    "inviteCodeEnabled": true
+  },
+
+  "social": {
+    "instagram": "",
+    "facebook": "",
+    "youtube_video_id": "VOTRE_VIDEO_ID"
+  },
+
+  "contact": {
+    "email": "contact@votre-mariage.fr",
+    "phone": "+33 6 00 00 00 00"
+  }
+}
