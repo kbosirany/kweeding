@@ -151,8 +151,8 @@ $(document).ready(function () {
             return;
         }
 
-        // Vérification basique de l'email
-        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        // Vérification email (RFC 5322 simplifié)
+        var emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+$/;
         if (!emailRegex.test(email)) {
             showAlert('danger', '<strong>Erreur :</strong> Adresse email invalide.');
             return;

@@ -606,6 +606,14 @@ footer .to-top:hover { color: var(--accent); margin-top: -4px; }
 body.modal-open { padding-right: 0 !important; }
 .modal-body     { padding: 25px; }
 
+/* Accessibilité : focus visible pour clavier */
+@media (pointer: fine) {
+  a:focus, button:focus, input:focus, select:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(201, 169, 110, 0.35);
+  }
+}
+
 /* =============================================================================
    Responsive
    ============================================================================= */

@@ -31,6 +31,19 @@
 body.modal-open { padding-right: 0 !important; }
 .modal-body     { padding: 25px; }
 
+// Accessibilité : focus visible pour la navigation au clavier
+// On retire l'outline uniquement pour les interactions souris/tactile
+@media (pointer: fine) {
+  a:focus,
+  button:focus,
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba($accent-color, 0.35);
+  }
+}
+
 // Floating arrow animation
 @keyframes floating-arrow {
   from   { transform: translate(-50%, 0); }
